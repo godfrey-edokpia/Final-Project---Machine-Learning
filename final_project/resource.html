@@ -1,0 +1,86 @@
+<html lang="en-us">
+<head>
+​
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+​
+<title>It's A Beautiful Day</title>
+​<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+​<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+
+<style>
+  h1 {
+    margin-bottom: 15px;
+    text-align: center;
+    background-color: rgb(61, 79, 105);
+    color: white;
+  }
+  h2 {
+    text-align: center;
+    color:rgb(61, 79, 105);
+  }
+</style>
+<body class="">
+    <!-- Start of navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <a class="navbar-brand" href="Beautiful_Day.html">Home</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse " id="navbarSupportedContent">
+        <ul class="navbar-nav  ml-auto navbar-right">
+          <li class="nav-item">
+            <a class="nav-link" href="resource.html">Resources</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="team.html">Team Members</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+</br>
+</br>
+<h1>RESOURCES</h1>
+  <div class="container">
+    <div class="row">
+        <div class="col-md-12">
+          <h2><u><center>Data Source</center></u></h2>
+          <center><a href="http://www.frontierweather.com/weatherdatastore.html" target="_blank" button type="button" class="btn btn-secondary btn-sm">Weather Data</button></a> <a href="KCLT_daily.txt" target="_blank" button type="button" class="btn btn-secondary btn-sm">Charlotte's Daily Weather Data</button></a></center>
+        </br>
+          <ul>  
+          <li><p>Once we extracted our data, we used PostgreSQL to filter our data.</p></li>
+          </ul>
+          <img src="sql.PNG" height="270" width="875">
+          <ul>
+            <li><p>We studied some of the temperatures that were dated back as early as the 2000s.</p></li>
+          </ul>
+          <center><a href="2000s_data.txt" target="_blank" button type="button" class="btn btn-secondary btn-sm">2000s Charlotte Weather Data</button></a></center>
+        </br>
+      </br>
+        </div>
+      </div>
+          <div class="row">
+            <div class="col-md-12">
+            <h2><u><center>Scoring Data</center></u></h2>
+            <p>Any average temperatures between 70 degrees t0 80 degrees without rain and snow is ideal to host an outside event. We used Python to score our average temperatures. A score of 1 = Bad Day and a score of 2 = Good Day.</p>
+            <img src="gradient.png" height="335" width="1000">
+            <p>As a result, when the machine learning part ran, it correctly picked a good day 86% of the time and correctly picked a bad day 44% of the time.</p>
+            <center><img src="machine_learning_results.png" height="225" width="850"></center>
+          </div>
+        </div>
+       </div> 
+    </div>
+</div>
+</br>
+</br>
+</br>
+</br>
+</body>
+</html>
